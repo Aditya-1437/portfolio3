@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "FOY-kRMsJ5k3ktAbe",
+        });
+    })();
+    </script>
+</head>
+<body class="container">
+<!-- header start -->
+    <header class="container">
+        <nav class="navbar navbar-expand-lg bg-success-subtle rounded" aria-label="Eleventh navbar example">
+            <div class="container-fluid">
+              <a class="navbar-brand fw-bold fs-3" href="#">Aditya. K</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5 fw-normal">
+                  <li class="nav-item">
+                    <a class="nav-link link-success fw-semibold" style="letter-spacing: 2px;" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link link-success fw-semibold" style="letter-spacing: 2px;" href="#about">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link link-success fw-semibold dropdown-toggle" style="letter-spacing: 2px;" href="#" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#fe">FrontEnd</a></li>
+                      <li><a class="dropdown-item" href="#fs">FullStack</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">College</a></li> -->
+                    </ul>
+                  </li>
+                </ul>
+                <button class="btn btn-success" style="letter-spacing: 3px;" type="button" onClick="document.getElementById('contact').scrollIntoView();">Contact Me</button>
+                
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- home section -->
+
+    <div class="container col-xxl-8 px-4 py-5 mt-5" id="home">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-4">
+                <img src="aditya.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-8">
+                <h6 class="fs-4 text-success-emphasis">Hello, My name is,</h6>
+                <h1 class="display-5 fw-bold text-success lh-1 mb-3">Aditya Kuncha</h1>
+                <p class="lead">I am a <span class="auto-typed text-success fw-semibold"></span></p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-success btn-lg px-4 me-md-2" onclick="window.open('/resume.pdf')">Download Resume</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about section -->
+     
+    <div class="container" id="about">
+        <div class="pricing-header p-1 pb-md-1 mx-auto text-center bg-success-subtle rounded">
+            <h1 class="display-4 fw-normal text-body-emphasis">About Me</h1>
+        </div>
+        <!-- SKILLS -->
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom text-success">SKILLS</h2>
+        
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+              <div class="col d-flex align-items-start" >
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-success">Front End</h3>
+                  <ul class="list-unstyled">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Java Script</li>
+                    <li>React JS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-success">Back End</h3>
+                  <ul class="list-unstyled">
+                    <li>Node JS</li>
+                    <li>Express JS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-success">Programming</h3>
+                  <ul class="list-unstyled">
+                    <li>Java</li>
+                    <li>Python</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-success">Database</h3>
+                  <ul class="list-unstyled">
+                    <li>My SQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Mongo DB</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- EDUCATION -->
+         <div class="container px-4 py-2">
+            <h2 class="pb-2 border-bottom text-success">EDUCATION</h2>
+
+            <div class="row mb-2">
+                <div class="col-md-6">
+                  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                      <strong class="d-inline-block mb-2 text-primary-emphasis">Master of Technology - CSE</strong>
+                      <h3 class="mb-0">KL University</h3>
+                      <div class="mb-1 text-body-secondary">2k23-2k25</div>
+                      <p class="card-text mb-auto"></p>
+                      <a class="link-success" style="cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Click to know more</a>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Master of Technology</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="container">
+                                <img src="edu4.jpeg" alt="">
+                                <p>Department : <span class="text-success">Computer Science</span></p>
+                                <p>Year of Study : <span class="text-success">2k23 - 2k25</span></p>
+                                <p>CGPA : <span class="text-success fw-bold">9.17</span><span class="text-danger">(live)</span></p>
+                                <p>Achievements : <span class="text-success">Nothing as of Now</span></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="/edu1.jpeg" width="200" height="200" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                      <strong class="d-inline-block mb-2 text-success-emphasis">Bachelor of Technology - ECE</strong>
+                      <h3 class="mb-0">Vignan's Institute of Information Technology</h3>
+                      <div class="mb-1 text-body-secondary">2k19-2k23</div>
+                      <p class="mb-auto"></p>
+                      <a class="link-success" style="cursor: pointer;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight">Click to know more</a>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Bachelor of Technology</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="container">
+                                <img src="edu3.jpeg" alt="">
+                                <p>Department : <span class="text-success">Electronics and Communication</span></p>
+                                <p>Year of Study : <span class="text-success">2k19 - 2k23</span></p>
+                                <p>CGPA : <span class="text-success fw-bold">7.5</span></p>
+                                <p>Achievements : <span class="text-success">2nd place in Circutrix Event</span></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-auto d-none d-lg-block pt-5">
+                        <img src="/edu2.jpeg" width="200" height="100" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+         </div>
+         <!-- personal details -->
+         <button class="btn btn-success mx-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">My Personal Details</button>
+
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-success" id="offcanvasBottomLabel">Personal Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <div class="row">
+                <div class="col">
+                    <p>Name : <span class="text-success">Kuncha Aditya</span></p>
+                    <p>Date of Birth : <span class="text-success">06-May-2k02</span></p>
+                    <p>Nationality : <span class="text-success">Indian</span></p>
+                </div>
+                <div class="col">
+                    <p>Marital Status : <span class="text-success">UnMarried</span></p>
+                    <p>Proper : <span class="text-success">Visakhapatnam, AP, India</span></p>
+                    <p>Hobbies : <span class="text-success">Playing Video Games</span></p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- projects section -->
+
+    <div class="container mt-5" id="projects">
+        <div class="pricing-header p-1 pb-md-1 mx-auto text-center bg-success-subtle rounded">
+            <h1 class="display-4 fw-normal text-body-emphasis">My Projects</h1>
+        </div>
+
+        <!-- FrontEnd -->
+        <div id="fe">
+            <h2 class="pb-2 border-bottom text-success my-4">Front End</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <!-- https://aditya-1437.github.io/Travel-guide/project/index.html -->
+                    <!-- https://github.com/Aditya-1437/Travel-guide.git -->
+                    <div class="card shadow-sm">
+                        <img src="/fe-1.png" width="100%" height="225" alt="">
+                      <div class="card-body">
+                        <h4 class="card-title">Travel Website</h4>
+                        <p class="card-text">HTML5, CSS3</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-dark" onclick="window.open('https://github.com/Aditya-1437/Travel-guide.git')">GitHub</button>
+                                <button type="button" class="btn btn-sm btn-outline-success" onclick="window.open('https://aditya-1437.github.io/Travel-guide/project/index.html')">Demo</button>
+                            </div>
+                          <small class="text-body-secondary">Working</small>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- https://github.com/Aditya-1437/slider-1.git -->
+                    <!-- https://aditya-1437.github.io/slider-1/ -->
+                    <div class="card shadow-sm">
+                        <img src="/fe-2.png" width="100%" height="225" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Slider Website</h4>
+                            <p class="card-text">HTML5, CSS3, JavaScript</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-dark" onclick="window.open('https://github.com/Aditya-1437/slider-1.git')">GitHub</button>
+                                <button type="button" class="btn btn-sm btn-outline-success" onclick="window.open('https://aditya-1437.github.io/slider-1/')">Demo</button>
+                            </div>
+                          <small class="text-body-secondary">Working</small>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- https://github.com/Aditya-1437/Food-App.git -->
+                    <!-- https://aditya-1437.github.io/Food-App/Project-5/index.html -->
+                    <div class="card shadow-sm">
+                        <img src="/fe-3.png" width="100%" height="225" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Food Delivery website</h4>
+                            <p class="card-text">HTML5, CSS3, JavaScript</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-dark" onclick="window.open('https://github.com/Aditya-1437/Food-App.git')">GitHub</button>
+                                <button type="button" class="btn btn-sm btn-outline-success" onclick="window.open('https://aditya-1437.github.io/Food-App/Project-5/index.html')">Demo</button>
+                            </div>
+                          <small class="text-body-secondary">Working</small>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BackEnd -->
+        <div id="fs">
+            <h2 class="pb-2 border-bottom text-success my-5">Full Stack</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <!-- https://github.com/Aditya-1437/TechBlogs.git -->
+                    <div class="card shadow-sm">
+                        <img src="/fs-1.png" width="100%" height="225" alt="">
+                      <div class="card-body">
+                        <h4 class="card-title">Blog Website</h4>
+                        <p class="card-text">HTML5, CSS3, ReactJS, NodeJS, ExpressJS, MongoDB</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-dark" onclick="window.open('https://github.com/Aditya-1437/TechBlogs.git')">GitHub</button>
+                                <button type="button" class="btn btn-sm btn-outline-success disabled">Ongiong</button>
+                            </div>
+                          <small class="text-body-secondary">Partial Working</small>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div class="pricing-header p-1 pb-md-1 my-5 mx-auto text-center bg-success-subtle rounded" id="contact">
+        <h1 class="display-4 fw-normal text-body-emphasis">Contact Me</h1>
+    </div>
+    <div class="d-flex align-items-center py-4">
+        
+        <main class="form-signin w-50 m-auto">
+            <form action="#home" onsubmit="return sendMail()">
+              <h1 class="h3 mb-3 fw-normal text-success">Liked my Portfolio?</h1>
+              <h6>Just Send a message</h6>
+          
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput" class="text-success">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword" class="text-success">Full Name</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingCompany" placeholder="Password">
+                <label for="floatingCompany" class="text-success">Your Company</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingRole" placeholder="Password">
+                <label for="floatingRole" class="text-success">Job Role</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingComment" placeholder="Password">
+                <label for="floatingComment" class="text-success">Comments</label>
+              </div>
+              <button class="btn btn-success w-100 py-2 my-4" type="submit">Send Notification</button>
+            </form>
+          </main>
+    </div>
+
+    <!-- footer section -->
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom border-success pb-3 mb-3">
+          <li class="nav-item"><a href="#home" class="nav-link px-2 text-success">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link px-2 text-success">About</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link px-2 text-success">Projects</a></li>
+          <li class="nav-item"><a href="https://github.com/Aditya-1437" class="nav-link px-2 text-success">GitHub</a></li>
+          <li class="nav-item"><a href="https://linkedin.com" class="nav-link px-2 text-success">LinkedIN</a></li>
+        </ul>
+        <p class="text-center text-success-emphasis">© 2024 Company, Inc</p>
+    </footer>
+    
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
